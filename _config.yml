@@ -1,0 +1,12 @@
+title:             Galli Bau AG
+email:             info@meingipser.ch
+description:       Qualität hat einen Namen
+author:            migaman
+baseurl:           
+url:               http://meingipser.ch
+
+# Build settings
+markdown:          kramdown
+ 
+# Produces a cleaner folder structure when using categories
+permalink: /:year/:month/:title.html
