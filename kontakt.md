@@ -8,28 +8,28 @@ form: true
   <div class="control-group">
     <div class="form-group floating-label-form-group controls">
       <label>Name</label>
-      <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+      <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Bitte Namen eingeben...">
       <p class="help-block text-danger"></p>
     </div>
   </div>
   <div class="control-group">
     <div class="form-group floating-label-form-group controls">
       <label>E-Mail Adresse</label>
-      <input type="email" class="form-control" placeholder="E-Mail Adresse" id="email" required data-validation-required-message="Please enter your email address.">
+      <input type="email" class="form-control" placeholder="E-Mail Adresse" id="email" required data-validation-required-message="Bitte E-Mail eingeben...">
       <p class="help-block text-danger"></p>
     </div>
   </div>
   <div class="control-group">
     <div class="form-group floating-label-form-group controls">
       <label>Telefon</label>
-      <input type="phone" class="form-control" placeholder="Telefon" id="phone" required data-validation-required-message="Please enter your email address.">
+      <input type="phone" class="form-control" placeholder="Telefon" id="phone" required data-validation-required-message="Bitte Telefon eingeben...">
       <p class="help-block text-danger"></p>
     </div>
   </div>
   <div class="control-group">
     <div class="form-group floating-label-form-group controls">
       <label>Nachricht</label>
-      <textarea rows="5" class="form-control" placeholder="Nachricht" id="message" required data-validation-required-message="Please enter a message."></textarea>
+      <textarea rows="5" class="form-control" placeholder="Nachricht" id="message" required data-validation-required-message="Bitte Nachricht eingeben..."></textarea>
       <p class="help-block text-danger"></p>
     </div>
   </div>
