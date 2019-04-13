@@ -4,18 +4,20 @@ layout: default
 
 # Unsere Partner
 
+<br />
 
-### Maler Hagmann
-<img src="img/logo_hagmann.jpg" alt="Maler Hagmann" />
+
+<img src="img/partner/logo_hagmann.jpg" alt="Maler Hagmann" />
 <br />Bühl
 <br />6207 Nottwil
 <br />041 / 281 05 08
-<br /><a href = "http://www.malerhagmann.ch" >www.malerhagmann.ch
+<br /><a href = "http://www.malerhagmann.ch" target="_blank" >www.malerhagmann.ch
 
 
 
+<br />
 
-### Mero Gmbh
-<img src="img/logo_mero.png" alt="Mero GmbH Generalunternehmung" />
+
+<img src="img/partner/logo_mero.png" alt="Mero GmbH Generalunternehmung" />
 <br />Schlaubhus 3
 <br />6020 Emmenbrücke	

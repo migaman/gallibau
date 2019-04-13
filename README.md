@@ -2,6 +2,10 @@
 Commercial [website](http://meingipser.ch). It is built with [Jekyll](http://jekyllrb.com/).
 
 
+## Build the site and make it available on a local server 
+bundle exec jekyll serve
+
+
 ## Credits
 
 Template:  

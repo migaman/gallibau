@@ -3,6 +3,8 @@ layout: default
 title: abcd
 ---
 
-Teamwork ist immer das beste und das schnellste
+Unsere Mitarbeiter. Mit Leidenschaft bei Ihrer Arbeit.
 
-Fotos von Mitarbeitenden...
+<img src="img/referenzen/littau_reihenhaus/IMG_9682.jpg" class="img-fluid">
+
+
