@@ -10,3 +10,5 @@ markdown:          kramdown
  
 # Produces a cleaner folder structure when using categories
 permalink: /:year/:month/:title.html
+
+exclude: ['notes', 'Gemfile', 'Gemfile.lock']
