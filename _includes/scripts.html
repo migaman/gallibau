@@ -5,7 +5,7 @@
 <script src="assets/scripts.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
 
-{% if page.url contains 'contact' %}
+{% if page.url contains 'kontakt' %}
 <!-- Form Validation -->
 <script src="assets/vendor/startbootstrap-clean-blog/js/jqBootstrapValidation.js"></script>
 <!-- Send Form -->
@@ -32,20 +32,22 @@
         $this = $("#sendMessageButton");
         $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
         $.ajax({
-          url: "//formspree.io/{{ site.email }}",
+          url: "https://jumprock.co/mail/meingipser",
           type: "POST",
+          data: $("#contactForm").serialize(),
+          dataType: "json",
           data: {
             name: name,
-            phone: phone,
             email: email,
-            message: message
+            message: message,
+            phone: phone
           },
           cache: false,
           success: function () {
             // Success message
             $('#success').html("<div class='alert alert-success'>");
             $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
-            $('#success > .alert-success').append("<strong>Your message has been sent. </strong>");
+            $('#success > .alert-success').append("<strong>Ihr Nachricht wurde erfolgreich gesendet. </strong>");
             $('#success > .alert-success').append('</div>');
             //clear all fields
             $('#contactForm').trigger("reset");
@@ -54,7 +56,7 @@
             // Fail message
             $('#success').html("<div class='alert alert-danger'>");
             $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
-            $('#success > .alert-danger').append($("<strong>").text("Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!"));
+            $('#success > .alert-danger').append($("<strong>").text("Der Mail-Server reagiert nicht. Bitte versuchen Sie es später nochmals oder schreiben Sie direkt eine E-Mail an info@meingipser.ch"));
             $('#success > .alert-danger').append('</div>');
             //clear all fields
             $('#contactForm').trigger("reset");
@@ -85,14 +87,18 @@
 {% endif %}
 
 <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/main.css">
+
 <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+<link
+  href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
   rel='stylesheet' type='text/css'>
 
 
-<link href='https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css' rel='stylesheet' type='text/css'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css' rel='stylesheet'
+  type='text/css'>
+
+
 
 <script>
   $(document).on('click', '[data-toggle="lightbox"]', function (event) {
@@ -100,3 +106,5 @@
     $(this).ekkoLightbox();
   });
 </script>
+
+<link rel="stylesheet" href="assets/main.css">

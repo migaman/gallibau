@@ -22,7 +22,7 @@ form: true
   <div class="control-group">
     <div class="form-group floating-label-form-group controls">
       <label>Telefon</label>
-      <input type="phone" class="form-control" placeholder="Telefon" id="phone" required data-validation-required-message="Bitte Telefon eingeben...">
+      <input type="phone" class="form-control" placeholder="Telefon" id="phone">
       <p class="help-block text-danger"></p>
     </div>
   </div>
